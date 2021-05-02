@@ -56,7 +56,7 @@ public class NewMain {
              else if(algoritmo[cont]!= '0' || algoritmo[cont]!= '1')
              {
                  aceptado = false;
-                 System.out.println("String must be 1 o 0.");
+                 System.out.println("String must be 1 or 0.");
                  
              }
          }

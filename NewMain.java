@@ -17,7 +17,7 @@ public class NewMain {
     
     public static void main(String[] args) {
      NewMain automata = new NewMain();
-     System.out.println("Ingrese una cadena: \n");
+     System.out.println("input a string: \n");
      Scanner sc = new Scanner(System.in);
      String cadena;
      cadena = sc.nextLine();
@@ -26,11 +26,11 @@ public class NewMain {
      
      if(automata.aceptado == true)
      {
-         System.out.println("Cadena Aceptada");
+         System.out.println("Accepted String");
      }
      else
      {
-         System.out.println("Cadena Rechazada");
+         System.out.println("Rejected String");
      }
      
     }
@@ -42,7 +42,7 @@ public class NewMain {
      }
      
      public void A(){
-         System.out.println("Estado A");
+         System.out.println("A State");
          aceptado = true;
          if(cont<algoritmo.length){
              if(algoritmo[cont]=='1'){
@@ -56,7 +56,7 @@ public class NewMain {
              else if(algoritmo[cont]!= '0' || algoritmo[cont]!= '1')
              {
                  aceptado = false;
-                 System.out.println("Cadena debe ser de 1 o 0.");
+                 System.out.println("String must be 1 o 0.");
                  
              }
          }
@@ -64,7 +64,7 @@ public class NewMain {
      
      public void B(){
          aceptado = true;
-         System.out.println("Estado B");
+         System.out.println("B State");
          if(cont<algoritmo.length)
          {
              if(algoritmo[cont]=='1')
@@ -81,7 +81,7 @@ public class NewMain {
     }
      
      public void C(){
-         System.out.println("Estado C");
+         System.out.println("C State");
          aceptado = false;
          if(cont<algoritmo.length)
          {
